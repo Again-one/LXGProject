@@ -10,3 +10,11 @@
 	远程服务器上生成一个本地仓库
 	git init
 	更新代码 git pull /etc/demo/demo.git
+
+# 命令
+git reset --hard #回退版本
+git	reflog #
+git remote add origin https://github.com/Again-one/LXGProject.git
+git push origin master
+git pull origin master
+
