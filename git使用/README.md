@@ -18,3 +18,4 @@
 	git push origin master
 	git pull origin master
 	git push origin master -f #强推
+	git push origin master #将本地主分支推到远程(如无远程主分支则创建，用于初始化远程仓库)
