@@ -1,0 +1,16 @@
+<view class='container'>
+  <view class='list'>推荐列表</view>
+  <view class='hot-list' wx:for="{{goods}}" data-id="{{item.id}}" data-detail="{{item.detail}}" data-summary="{{item.summary}}" data-size="{{item.size}}" data-picture="{{item.picture}}"  bindtap='showDetail'>
+    <view class='hot'>热</view>
+    <view class='detail'>
+      <image src='{{url}}/image/{{item.picture}}_1.jpg'></image>
+      <view class='txt'>{{item.summary}}</view>
+    </view>
+    <view class='show'>
+      <text>{{item.pay}}</text>
+      <text>{{item.price}}</text>
+    </view>
+  </view>
+
+</view>
+  

@@ -1,0 +1,51 @@
+.container{
+  background: #f2f2f2;
+}
+.order-list{
+  width: 100%;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.order-list .list-title{
+  font-size: 28rpx;
+  padding: 30rpx 0 25rpx 30rpx;
+  color: #000;
+}
+.order-list .order-item{
+  width: 720rpx;
+  margin-left: 30rpx;
+  display: flex;
+  border-top: 1px solid #eee;
+  padding: 30rpx 30rpx 30rpx 0;
+  border-radius: 15rpx;
+  justify-content: space-between;
+  color: orange;
+}
+.order-list .order-item .title{
+  font-size: 28rpx;
+  color:#eee;
+  border-bottom: 1px solid #eee;
+}
+.he{
+  font-size: 30rpx;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 30rpx;
+  border-top: 1px solid #eee;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing:border-box;
+  align-items: center;
+
+}
+.footer .button{
+  padding: 20rpx;
+  color: orange;
+  text-align: center;
+}

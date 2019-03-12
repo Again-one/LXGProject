@@ -1,0 +1,13 @@
+page{
+  background: #fbe8e8;
+  height: 100%;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  
+  font-size: 40rpx;
+  line-height: 100%;
+  padding-top: 400rpx;
+}

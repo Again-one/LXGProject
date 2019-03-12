@@ -1,0 +1,16 @@
+<view class='goods-list'>
+  <view class='list'>订单编号:{{goods[0].oid}}</view>
+  <view class="goods" wx:for="{{goods}}">
+    <view class="img-box">
+        <image src="{{url}}/image/{{item.picture}}_1.jpg" style='width:160rpx;height:160rpx'></image>
+    </view>
+    <view class="detail">
+        <view class="summary">{{item.summary}}</view>
+        <view class="column">
+          <text>X{{item.sum}}</text>
+          <text style="color:#eee;font-size:26rpx;">￥{{item.price}}</text>
+        </view>
+      </view>
+    </view>
+    
+</view>

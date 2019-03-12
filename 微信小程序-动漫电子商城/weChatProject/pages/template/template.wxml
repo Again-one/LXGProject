@@ -1,0 +1,43 @@
+<template name="no-goods">
+    <view class="my_image">
+
+    <image src='/image/cart_shop.png' ></image>
+    <text>购物车还是空的哦</text>
+    </view> 
+</template>
+<template name="goods">
+    
+<view class="container carts-list">
+
+  <view wx:for="{{list.goods}}" class="goods-container" wx:key="{{index}}">
+    <view class='goods-item'  data-index="{{index}}" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd' style="left:{{list.leftPace[index]}}px">
+     <icon type="{{item.isSelect ? 'success_circle' : 'circle'}}" size="20" catchtap='selectGoods'  data-index="{{index}}"></icon> 
+     <view>
+      <image src='{{url}}/image/{{item.picture}}_1.jpg' class='goods-image'></image>
+     </view>
+     <view class='goods-text'>
+      <view class="goods-title">{{item.summary}}</view>
+      <view class="goods-subtitle">
+        <text class="goods-price">￥{{item.price}}</text>
+        <view>
+          <view class='sum' >
+            <text class='normal' catchtap='subtract' data-index="{{index}}">-</text>
+            <input type='number' value='{{item.sum}}' data-index="{{index}}"></input>
+            <text class='normal' catchtap='add' data-index="{{index}}">+</text>
+          </view>
+        </view>
+      </view>
+     </view>
+    </view>
+    	<button type="warn" class="delete-button" catchtap="deleteGoods" data-index="{{item.sid}}">删除</button>
+  </view>
+</view>
+<view class='goods-footer'>
+  <view class="select">
+    <icon type="{{list.isSelectAll ? 'success_circle' : 'circle'}}" size="18" catchtap='selectAll'/>
+      <text>全选</text>
+      <text>￥{{list.price}}</text>
+  </view>
+  <view class='button' catchtap='order'>立即结算</view>
+</view>
+</template>

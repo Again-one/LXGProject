@@ -1,0 +1,41 @@
+<view class="userinfo">
+
+  <!-- 头像-->
+  <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <view >
+    
+  </view>
+  
+    
+  
+  </view>
+<view class='order'>
+
+  <view class="order-item" bindtap='openCard'>
+    <text>我的卡卷</text>
+  </view>
+  <view clas="order-item" bindtap='openNull'>
+    <text>我的快递</text>
+  </view>
+  <view class="order-item" bindtap='openNull'>
+    <text>已收货</text>
+  </view>
+
+</view>
+
+<!--横向列表-->
+<view class='me'>
+
+  <text>余额</text>
+  <text style="color:orange">￥986</text>
+
+</view>
+<view class='me' bindtap='order'>
+  <text >我的订单</text>
+
+</view>
+<view class='me' bindtap='message'>
+  <text >收货地址</text>
+
+</view>

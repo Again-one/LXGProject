@@ -1,0 +1,85 @@
+.container{
+  background: #f2f2f2;
+  margin-bottom: 100rpx;
+}
+.messageItem{
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: #fff;
+  margin-bottom: 10rpx;
+}
+.messageItem icon{
+  margin: auto auto;
+  width: 50rpx;
+
+}
+.messageItem .detail{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.messageItem .detail text{
+  font-size: 25rpx;
+  line-height: 28rpx;
+  color: #eee;
+  padding: 50rpx;
+  width: 700rpx;
+}
+.messageItem .detail .link{
+  
+  font-size: 28rpx;
+  color: #000; 
+}
+.footer{
+  background-color: #fff;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.footer .delete{
+  border-radius: 40rpx;
+  height: 100rpx;
+  flex-grow: 1;
+  font-size: 28rpx;
+  padding: 3rpx;
+  color: #fff;
+  background-color: #eee;
+  line-height: 100rpx;
+  text-align: center;
+}
+.footer .add{
+  height: 100rpx;
+  border-radius: 40rpx;
+  background-color: #eee;
+  flex-grow: 1;
+  font-size: 28rpx;
+  padding: 3rpx ;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+}
+.footer .ok{
+  height: 100rpx;
+  text-align: center;
+  
+  line-height: 100rpx;
+  background-color: orangered;
+  flex-grow: 2;
+  font-size: 40rpx;
+  font: bold;
+  color: #fff;
+  padding: 3rpx;
+}

@@ -1,0 +1,29 @@
+.title{
+  width: 100%;
+  height: 50rpx;
+  padding: 5rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 28rpx;
+}
+.item{
+  width: 100%;
+  height: 200rpx;
+  margin: 10rpx;
+  border: 1rpx solid black;
+  padding: 5rpx;
+  border-bottom: 2rpx solid #eee;
+  position: relative;
+}
+.item image{
+  width: 300rpx;
+  height:200rpx;
+  vertical-align: middle; 
+}
+.item text{
+  font-size: 25rpx;
+  color: orange;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  
+}

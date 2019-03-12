@@ -1,0 +1,130 @@
+form{
+  width: 100%;
+ padding-bottom: 100rpx
+}
+.container{
+  background-color: #f2f2f2;
+}
+.createOrder{
+  width: 100%;
+  background: url('{{url}}/image/line.png') no-repeat bottom center,url("{{url}/image/right.png") no-repeat right center;
+  background-size: 750rpx auto,16rpx auto;
+  background-color: #fff;
+  margin: 20rpx 0;
+}
+.addDress{
+  width: 100%;  
+}
+.addDress .title{
+  font-size: 28rpx;
+  color: #000;
+  margin-left: 30rpx;
+  background: url('http://39.108.50.93:9090/Hello/image/add.png' ) no-repeat  left center;
+  background-size: 60rpx auto;
+  padding: 40rpx 0 40rpx 90rpx;
+}
+.goods-list{
+  width: 100%;
+  margin-bottom:20rpx;
+  background: #fff;
+}
+.goods-list .title{
+  font-size: 28rpx;
+  color: #000;
+  padding: 30rpx 0 25rpx 30rpx;
+}
+.goods-list .goods{
+  width: 720rpx;
+  margin-left: 30rpx;
+  display: flex;
+  border-top: 1px solid #eee;
+  padding: 30rpx 30rpx 30rpx 0;
+}
+.goods-list .goods .img-box{
+  width: 160rpx;
+  height: 160rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+  background: #d8d8d8;
+}
+.goods-list .goods .detail{
+  width: 530rpx;
+  padding-top: 10rpx;
+}
+.goods-list .goods .detail .summary{
+  width: 360rpx;
+  height: 74rpx;
+  font-size: 26rpx;
+  color: #000;
+  line-height: 26rpx;
+  overflow: hidden;
+  float: left;
+}
+.goods-list .goods .detail .column{
+  display:  flex;
+  flex-direction: column;
+  align-items:flex-end;
+  justify-content: space-between;
+  height: 160rpx;
+  float: right;
+  width: 140rpx;
+  
+}
+.goods-list .goods .detail .column text{
+  font-size: 28rpx;
+  color: #000;
+  padding-right:20rpx;
+  
+}
+.jisuan{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #eee;
+}
+.jisuan .price{
+  display: flex;
+  width: 500rpx;
+  justify-content: flex-end;
+  line-height: 100rpx;
+  padding: 0 30rpx 0;
+  font-size: 28rpx;
+}
+.jisuan .total{
+  color: #e64340;
+  text-align: right;
+}
+.jisuan .pay{
+  width: 250rpx;
+  text-align: center;
+  height: 100%;
+  line-height: 100rpx;
+  background-color: #e64340;
+  font-size: 32rpx;
+  color: #fff;
+  
+}
+.address{
+  width: 664rpx;
+  padding-left: 100rpx;
+  background: url(http://39.108.50.93:9090/Hello/image/ico-addr.png) no-repeat 30rpx center,url(http://39.108.50.93:9090/Hello/image/right.png) no-repeat right center;
+  background-size: 30rpx auto,16rpx auto;
+  
+  box-sizing: border-box;
+}
+.address .name-tel{
+  font-size: 28rpx;
+  color: #000;
+  padding: 30rpx 0 20rpx 0;
+}
+.address .addr-text{
+  font-size: 24rpx;
+  color: #888;
+  padding-bottom: 34rpx;
+  line-height: 34rpx;
+
+}

@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="1000" style='height:120px'
+
+>
+ <block wx:for="{{banner}}" wx:key="" wx:for-index="i">
+    <swiper-item>
+    
+      <image src="{{item}}" mode="aspectFill" style="width:100%; height=100%" 
+      bindtap='showGoods' data-id="{{i}}" data-b="3" />
+    
+    </swiper-item>
+ </block>
+
+</swiper>
+<view class="func-area">
+  <view bindtap='navigationLogistics'>
+    <image style="background:#a1ff5e" src="/image/trans.png" mode="aspectFill"/>
+    <text >物流信息</text>
+  </view>
+  
+  <view bindtap='navigationRecommend'>
+    <image style="background:#11ffff" src="/image/recommend.png" mode="aspectFill"/>
+    <text >商品推荐</text>
+  </view>
+
+</view>
+
+<view class='goods'>
+  <text class='caption'>漫品列表</text>
+  <view class="tab">
+    <scroll-view class='tab-scroll' scroll-x="true">
+      <view class='tab-box' wx:for="{{tab}}">
+        <view data-id="{{item.cid}}" class="{{clickId == item.cid ? 'tab-click' :''}}" bindtap='tabclick'>
+          {{item.name}}
+         
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  
+ 
+  
+  <view class='main-goods' >
+    
+    
+    <view class='single-goods' wx:for="{{goods}}" bindtap="showDetail" data-picture="{{item.picture}}" data-detail="{{item.detail}}" data-summary="{{item.summary}}" 
+    data-id="{{item.id}}" data-size="{{item.size}}" >
+        <image src="{{url}}/image/{{item.picture}}_1.jpg"/>
+       
+      <text class='title'>{{item.summary}}</text>
+      <view class='summary' >
+        <text class='price'>￥{{item.price}}</text>
+        <text class='sale'>{{item.pay}}</text>
+      
+      </view>
+      
+    </view>
+   
+  </view>
+
+</view>

@@ -1,0 +1,4 @@
+<import src="../template/template.wxml"/>
+<view>
+  <template is="{{list.goods.length>0? 'goods' : 'no-goods'}}" data="{{list,url}}"></template>
+</view>

@@ -1,0 +1,29 @@
+<!--logs.wxml-->
+<view class="container log-list">
+ 
+  <view class='content'>
+    <view >
+      <view class='title'>
+        <text>活动介绍</text>
+      </view>
+      <view class='detail'>
+        <text>春节过后，"五一"节将是我们面对的第二个销售旺季。在此期间，五一长假，客流增加，需求旺盛。旅游节、园艺展、经贸会等活动和深圳新一佳超市开业都是市场的新亮点，为抓住有利时机，整合企业内外资源，树立全新形象，抢市造势，积极扩大销售，为引商招商，提升企业品牌形象，势在必行。</text>
+      </view>
+      
+    </view>
+  </view>
+   <image src="{{goods[id].image}}" width="100%" height="100%"/>
+  <view class='content' >
+    <view class='title'><text>领取卡卷</text></view>
+    <view style='text-align:center'>
+      <image src='/image/{{image2[id]}}.png' mode='aspectFit'></image>
+      <view wx:if="{{click}}">
+         <button size='100' style='background:orange;color:white' bindtap='click' >点击领取</button>
+      </view>
+      
+     <view wx:if="{{click==false}}">
+         <button size='100' disabled='true'  style='background:#eee;color:white'>已经领取</button>
+      </view>
+    </view>
+  </view>
+</view>

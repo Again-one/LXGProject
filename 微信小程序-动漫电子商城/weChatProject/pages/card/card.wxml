@@ -1,0 +1,9 @@
+<view>
+  <view class='title'>
+    <text>卡卷信息</text>
+  </view>
+  <view class='item' wx:for="{{cards}}">
+    <image mode='aspectFit' src='{{img[item-1]}}'></image>
+    <text>拥有数X1</text>
+  </view>
+</view>

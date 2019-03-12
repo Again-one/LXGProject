@@ -1,0 +1,18 @@
+<view class="container">
+
+  <view class='messageItem' wx:for="{{message}}" bindtap='selectAddress' data-index="{{index}}">
+    <icon type="{{selectId==index ? 'success_circle' : 'circle'}}"></icon>
+    <view class='detail'>
+      <view class='link'><i>联系人</i><text>{{item.link}}</text></view>
+      <view class='link'><i>城市</i><text>{{item.city}}</text></view>
+      <view class='link'><i>详细地址</i><text>{{item.address}}</text></view>
+    </view>
+  </view>
+  
+  
+</view>
+<view class='footer'>
+    <view class='delete' catchtap='delete2'>删除</view>
+    <view class='add' catchtap='add'>添加</view>
+    <view class='ok'catchtap="ok">确认</view>
+  </view>

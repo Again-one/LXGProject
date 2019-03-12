@@ -1,0 +1,15 @@
+<view class='container'>
+  <view class="title">物流信息</view>
+  <view class="logistics-list" wx:for="{{logistics}}" mode="aspectFit" data-id="{{index}}" bindtap='click'>
+      <image src='/image/kd_sf.png'></image>
+    
+    <view class='detail'>
+      <text style='font-size:25rpx;color:gray'>订单：{{item.oid}}</text>
+      
+      
+      <text wx:if="{{item.isFa==1}}" style='color:blue;'>包裹已出库</text>
+      <text wx:if="{{item.isFa==0}}" style='color:lemonchiffon'>商家未发货</text>
+    </view>
+  </view>
+  
+</view>

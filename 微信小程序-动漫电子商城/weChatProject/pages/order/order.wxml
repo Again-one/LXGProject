@@ -1,0 +1,43 @@
+<view class="container">
+  <form bindsubmit="submit" report-submit='true'>
+  <view class='createOrder' hidden='{{message.length>0?true:false}}'>
+    <view class="addDress" bindtap='addAdress'>
+       <view class="title">新增一个收货地址
+       </view>
+    </view>
+     
+      
+        
+  </view>
+  <view class='address' bindtap='selectMessage' hidden='{{message.length>0?false:true}}' >
+      <view class='name-tel'>{{currentMessage.link}} {{currentMessage.mobile}}
+      </view>
+      <view class='addr-text'>{{currentMessage.address}}
+      </view>
+  </view>
+  
+  <view class="goods-list">
+    <view class="title">商品列表</view>
+    <view class="goods" wx:for="{{goods}}">
+       <view class="img-box">
+        <image src="{{url}}/image/{{item.picture}}_1.jpg" style='width:160rpx;height:160rpx'></image>
+       </view>
+       <view class="detail">
+        <view class="summary">{{item.summary}}</view>
+        <view class="column">
+          <text>X{{item.sum}}</text>
+          <text style="color:#eee;font-size:26rpx;">￥{{item.price}}</text>
+       </view>
+       </view>
+       
+      
+    </view>
+  </view>
+   <view class="jisuan">
+        <view class="price">
+            <view class="total">合计：¥ {{price}}</view>
+        </view>
+        <button class="pay" formType="submit">提交订单</button>
+    </view>
+  </form>
+</view>

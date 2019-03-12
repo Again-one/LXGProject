@@ -1,0 +1,151 @@
+page{
+
+  background: #fbe8e8;
+
+}
+.search-top{
+  width: 100%;
+}
+.search-form{
+  position: relative;
+  width: 100%;
+ 
+}
+.search-form .search-input{
+  padding-left: 50rpx;
+  display: inline-block;
+  background: #fff ;
+  font-size: 28rpx;
+  width: 100%;
+  height: 60rpx;
+   border: 1rpx solid black;
+   
+}
+.search-form .search-icon{
+ background:none;
+ position:absolute;
+ border:none;
+ left:10rpx;top:-5rpx;bottom:0;width:80rpx;
+  
+}
+
+.goods-list{
+  width: 100%;
+  margin-bottom:20rpx;
+  background: #fff;
+  
+  
+}
+.goods-list .list{
+  padding: 30rpx;
+  line-height: 26rpx;
+  font-size: 28rpx;
+  
+}
+.goods-list .goods{
+  width: 720rpx;
+  margin-bottom: 20rpx;
+  margin-left: 30rpx;
+  display: flex;
+  border-top: 1px solid #eee;
+  padding: 30rpx 30rpx 30rpx 0;
+  
+
+}
+.goods-list .goods .img-box{
+  width: 160rpx;
+  height: 160rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+  background: #d8d8d8;
+}
+.goods-list .goods .detail{
+  width: 530rpx;
+  padding-top: 10rpx;
+}
+.goods-list .goods .detail .summary{
+  width: 360rpx;
+  height: 74rpx;
+  font-size: 26rpx;
+  color: #000;
+  line-height: 26rpx;
+  overflow: hidden;
+  float: left;
+}
+.goods-list .goods .detail .column{
+  display:  flex;
+  flex-direction: column;
+  align-items:flex-end;
+  justify-content: space-between;
+  height: 160rpx;
+  float: right;
+  width: 140rpx;
+  
+}
+.goods-list .goods .detail .column text{
+  font-size: 28rpx;
+  color: #000;
+  padding-right:20rpx;
+  
+}
+.jisuan{
+  display: flex;
+  justify-content: space-between;
+  flex-direction:column;
+  width: 100%;
+  height: 200rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #eee;
+  background: white;
+}
+.jisuan .zhifu .price{
+  display: flex;
+  width: 500rpx;
+  justify-content: flex-end;
+  line-height: 100rpx;
+  padding: 0 30rpx 0;
+  font-size: 28rpx;
+}
+.jisuan .zhifu .total{
+  color: #e64340;
+  text-align: right;
+}
+.jisuan .zhifu .pay{
+  width: 250rpx;
+  text-align: center;
+  height: 100%;
+  line-height: 100rpx;
+  background-color: #e64340;
+  font-size: 32rpx;
+  color: #fff;
+  
+}
+.jisuan .zhifu{
+  width: 100%;
+  height: 100rpx;
+  justify-content: space-between;
+  display: flex;
+
+
+}
+.jisuan .quxiao{
+  text-align:center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40rpx;
+  line-height: 100rpx;
+  width: 100%;
+  height: 100rpx;
+  padding-top: 10rpx;
+  
+}
+.jisuan .quxiao text{
+  width: 50%;
+  background-color:orange;
+  border-right: 8rpx solid white;
+  border-left: 8rpx solid white;
+ 
+}

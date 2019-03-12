@@ -1,0 +1,27 @@
+<view class="search-top">
+  <form class="search-form" bindsubmit="searchSubmit" >
+    <input value="{{searchValue}}" placeholder="商品名称" class="search-input" bindfocus="focusSearch" bindinput="searchChangeInput" auto-focus="true" name="name" />
+    <view class="search-icon search-active" style="width:40rpx;">
+      <icon type="search" size="13" color="#888" style="float:left;margin-right:20rpx;"></icon>
+    </view>
+    <button  wx:if="{{clear}}" formType="submit" style="background:red;position:absolute;border:none;right:60rpx;top:-20rpx;bottom:0;width:160rpx;font-size:28rpx;height:60rpx;color:white;z-index:4">
+      搜索
+    </button>
+  </form>
+</view>
+
+
+<view class='goods-list'>
+  <view class="goods" wx:for="{{goods}}" bindtap='click' data-picture="{{item.picture}}" data-detail="{{item.detail}}" data-summary="{{item.summary}}" data-size="{{item.size}}" data-id="{{item.id}}">
+    <view class="img-box">
+        <image src="{{url}}/image/{{item.picture}}_1.jpg" style='width:160rpx;height:160rpx'></image>
+    </view>
+    <view class="detail">
+        <view class="summary">{{item.summary}}</view>
+        <view class="column">
+          <text>{{item.pay}}</text>
+          <text style="color:#eee;font-size:26rpx;">￥{{item.price}}</text>
+        </view>
+      </view>
+  </view>
+</view>

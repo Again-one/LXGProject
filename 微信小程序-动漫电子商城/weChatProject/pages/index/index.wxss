@@ -1,0 +1,158 @@
+/**index.wxss**/
+
+page{
+
+  background: #fbe8e8;
+
+}
+
+.func-area image{
+
+  width:100rpx;
+  height:100rpx;
+  border-radius: 20rpx;
+
+}
+.func-area text{
+
+  display: block;
+  color:#333;
+  font-size:36rpx;
+  line-height: 90rpx;
+
+}
+.func-area{
+
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0;
+  padding-top: 30rpx;
+  background: white;
+
+
+}
+.func-area view{
+
+  width:50%;
+  text-align: center;
+
+}
+
+.goods{
+
+  background:white;
+
+}
+.goods .caption{
+
+  font-size: 32rpx;
+	width: 100%;
+	line-height: 60rpx;
+	text-indent: 20rpx;
+	padding: 10rpx;
+  display: block;
+  border-bottom: 1rpx solid #eee;
+}
+.tab{
+  width: 100%;
+  height: 88rpx;
+  background: white;
+  overflow: hidden;
+}
+.tab .tab-scroll{
+  white-space: nowrap;
+  height: 88rpx;
+  width: 100%;
+  background: white;
+  
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.tab .tab-scroll .tab-box{
+
+  height: 88rpx;
+  width: 100%;
+  background: white;
+
+}
+.tab .tab-scroll .tab-box{
+  width: 160rpx;
+  line-height: 80rpx;
+  display: inline-block;
+  text-align: center;
+  font-size: 24rpx;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+.tab .tab-scroll .tab-box .tab-click{
+  border-bottom:1rpx solid red;
+}
+.main-goods {
+/*	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+*/
+
+  border-top: 3px solid #eee;
+	background: white;
+	display: inline-block;
+}
+
+.main-goods .single-goods {
+
+	
+	
+  display: block;
+	float: left;
+	width: 50%;
+  border: 1 solid gray;
+}
+
+.main-goods image {
+	width: 220rpx;
+	height: 220rpx;
+	display: block;
+	margin: 20rpx auto;
+  
+}
+
+.main-goods .title {
+	
+	width: 90%;
+	color: #999;
+	font-size: 20rpx;
+	margin: 10rpx 6rpx;
+	height: 60rpx;
+	line-height: 32rpx;
+	overflow: hidden;
+  
+
+}
+
+.main-goods .summary {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  margin-bottom: 5rpx;
+  
+}
+
+.main-goods .summary text {
+	font-size: 28rpx;
+	margin: 10rpx 20rpx;
+  
+}
+
+.main-goods .summary .price {
+	color: red;
+}
+
+.main-goods .summary .sale {
+	color: gray;
+}
+
+

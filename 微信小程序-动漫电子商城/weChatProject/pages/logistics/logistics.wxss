@@ -1,0 +1,46 @@
+.container{
+  background: #eee;
+  font-size: 28rpx;
+  padding: 5rpx;
+}
+.title{
+  font-size: 30rpx;
+  width: 100%;
+  height: 60rpx;
+  background: white;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+  border:1rpx solid #eee;
+}
+.logistics-list{
+  width: 100%;
+  height: 248rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rpx;
+  background:white url(http://39.108.50.93:9090/Hello/image/right.png) no-repeat right center;
+  background-size: 23rpx auto;
+  border-top:1rpx solid aliceblue  ;
+}
+
+
+.logistics-list image{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx auto;
+  display:  block;
+}
+.logistics-list .detail{
+  width: 70%;
+  height:100%;
+  padding-top: 30rpx;
+  
+
+}
+.logistics-list .detail text{
+  display: block;
+  padding: 20rpx 40rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+
+}
